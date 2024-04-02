@@ -279,7 +279,7 @@ header h2{
 
 /* NOTE: Under this following approach, styles can also be combined within a single view size; in this instance, display .header_mobile and its contents when max-width < 37.5em (600px) */
 
-@media only screen and (max-width: 37.5em), only screen and (max-width: 48em){
+@media only screen and (max-width: 37.5em), (max-width: 48em){
 
 	/* extend the picture to take up the entire view port */
 	.header-picture{
@@ -356,5 +356,118 @@ header h2{
 		margin: auto;
 	}
 }
-
+	
 /* :::: END OF FOOTER :::: */
+
+
+/* :::: START OF PRACTICE :::: */
+
+
+/* --- DESKTOP SECTION --- */
+
+.practice{
+	background-color: #f0f0f0;
+	padding: 2rem 1.5rem;
+}
+
+.practice img{
+	width: 100%;
+}
+
+.practice h3{
+	font-size: 2.4rem;
+	font-weight: 700;
+	padding: 2rem 0;
+}
+
+.practice-text{
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+}
+
+.practice-name{
+	font-size: 1rem;
+}
+
+.info{
+	background-color: #f0f0f0;
+	border-left: 1px solid #e7e7e7;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 3px;
+	margin-top: 2rem;
+}
+
+.info-block{
+	padding-left: 1em;
+	display: grid;
+	grid-template-columns: 0.4fr 0.6fr;
+	column-gap: 5%;
+	border-bottom: 1px solid #e7e7e7;
+	border-top: 1px solid #e7e7e7;
+	align-items: center;
+}
+
+.info-block img{
+	width: 100%;
+	padding: 1em 0em;
+}
+
+.info-block h4{
+	color: #303646;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.info-block p{
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+.info-block:last-child{
+	background-color: #d7d7d7;
+}
+
+.btn-small:link, .btn-small:visited{
+	font-size: 1.2rem;
+	font-weight: normal;
+	color: #30A9DE;
+}
+
+.btn-small:hover, .btn-small:visited{
+	text-decoration: underline;
+}
+
+/* by default, info-mobile should be hidden */
+.info-mobile{
+	display: none;
+}
+
+/* --- MOBILE SECTION --- */
+
+@media only screen and (max-width: 37.5em), (max-width: 48em){
+
+	.practice{
+		display: none;
+	}
+
+	.info{
+		display: none;
+	}
+
+	.info-mobile{
+		display: grid;
+		grid-column: full--start / full--end;
+	}
+
+	.info-block{
+		grid-template-columns: 1fr;
+		padding: 2rem;
+	}
+
+	.info-block:last-child{
+		background-color: transparent;
+	}
+}
+
+/* :::: END OF PRACTICE :::: */
