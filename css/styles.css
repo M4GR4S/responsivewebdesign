@@ -626,14 +626,14 @@ header h2{
   } 
   
   /* Thesis Side */
-  .side.b{
-	grid-template-rows: 1fr 1fr;
-  }
 
   .side{
+	background-color: #f0f0f0;
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
-	padding: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
   }
   
   .square{
@@ -645,8 +645,6 @@ header h2{
   .square img{
 	width: auto;
 	height: auto;
-	margin: 12px;
-	padding: 12px;
   }
   
   .sidetxt{
