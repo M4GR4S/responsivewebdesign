@@ -1,4 +1,4 @@
-@import url('href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Source+Sans+Pro:wght@300;400&display=swap"');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Useful sites to convert units of measurements */
 /* https://nekocalc.com/px-to-rem-converter */
@@ -428,18 +428,22 @@ header h2{
 	background-color: #d7d7d7;
 }
 
-.btn-small:link, .btn-small:visited{
+.btn-small:link, .btn-small:visited, .course-btn:link, .course-btn:visited{
 	font-size: 1.2rem;
 	font-weight: normal;
 	color: #30A9DE;
 }
 
-.btn-small:hover, .btn-small:visited{
+.btn-small:hover, .btn-small:visited, .course-btn:hover, .course-btn:visited{
 	text-decoration: underline;
 }
 
 /* by default, info-mobile should be hidden */
 .info-mobile{
+	display: none;
+}
+
+.learning-btn{
 	display: none;
 }
 
@@ -471,3 +475,218 @@ header h2{
 }
 
 /* :::: END OF PRACTICE :::: */
+
+/* START OF START LEARNING */
+/* DESKTOP SECTION */
+
+.start-learning {
+	background-color: #eaebec;
+	display: grid;
+	grid-column: full--start / full--end;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .start-learning h1 {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	text-align: center;
+	font-size: 3.5rem;
+  }
+  
+  .classes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+  }
+  
+  
+  .classes-card{
+	display: flex;
+	flex-direction: column;
+	margin-right: 32px;
+	margin-left: 32px;
+	margin-bottom: 32px;
+	width: 25%;
+	background-color: white;
+  }
+  
+  .classes-word-content{
+	background-color: white;
+  }
+  
+  .classes-word-content h3{
+	margin:  16px;
+	font-size: 2.4rem;
+  }
+
+  .classes-word-content p{
+	margin: 8px 16px;
+	color: #8e8e8e;
+	font-size: 2rem;
+  }
+  .classes-card img {
+	height: auto;
+	width: 100%;
+  }
+  
+  /* --- MOBILE SECTION --- */
+  
+  @media only screen and (min-width: 770px) {
+  
+	.learning-buttons {
+	  display: none;
+	}
+  }
+  
+  @media only screen and (min-width: 200px) and (max-width: 771px) {
+  
+	.learning-buttons {
+		border-top: 2px solid lightgrey;
+		display: grid;
+		grid-column: full--start / full--end;
+		align-items: center;
+		margin-left: 24px;
+		margin-right: 24px;
+		margin-bottom: 32px;
+		gap: 8px;
+	}
+  
+	.learning-buttons h1 {
+		margin-top: 16px;
+		margin-bottom: 16px;
+		text-align: center;
+		font-size: 3rem;
+		font-weight: 800;
+	}
+  
+	.class-button {
+		width: 100%;
+		height: 65px;
+		background-color: #d8d8d8;
+		border: none;
+		text-align: left;
+	}
+  
+	.class-button a {
+		margin: 16px 16px 24px 16px;
+		text-decoration: none;
+		font-size: 2rem;
+		color: #4a4a4a;
+		font-weight: 600;
+	}
+
+	.start-learning{
+		display: none;
+	}
+  
+  }
+  
+  /* END OF START LEARNING */
+
+  /* :::: START OF THESIS :::: */
+  /* --- DESKTOP SECTION --- */
+  .thesis {
+	background-color: #f0f0f0;
+	display: grid;
+	grid-template-columns: 55% 45%;
+	grid-column: full--start / full--end;
+	border-bottom: 1px solid #d8d8d8;
+  }
+  .thesis h2{
+	margin: 32px 0;
+	text-align: center;
+	grid-column: 1/3;
+	font-size: 3rem;
+	font-weight: 800;
+  }
+  
+  div video{
+	width: 100%;
+	margin: 0 24px 24px 24px;
+  }
+  
+  .urban{
+	width: 60%;
+	margin-left: 24px;
+	width: 100%;
+  }
+  
+  .urban > h3{
+	margin-bottom: 8px;
+	font-size: 2.5rem;
+  }
+  
+  .urban > p{
+	margin-bottom: 32px;
+	line-height: 1.25em;
+	font-size: 2rem;
+  } 
+  
+  /* Thesis Side */
+  .side.b{
+	grid-template-rows: 1fr 1fr;
+  }
+
+  .side{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	padding: 10px;
+  }
+  
+  .square{
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0 .35em .25em 2em;
+  }
+  
+  .square img{
+	width: auto;
+	height: auto;
+	margin: 12px;
+	padding: 12px;
+  }
+  
+  .sidetxt{
+	align-self: center;
+	width: 60%;
+	overflow: hidden;
+	font-size: 2rem;
+	padding: 16px;
+  
+  }
+  
+  .sidetxt p{
+	padding: 16px 0;
+  }
+
+  .thesis-mobile{
+	display: none;
+  }
+
+  /* --- MOBILE SECTION --- */
+
+  @media only screen and (min-width: 200px) and (max-width: 771px){
+	.thesis{
+		display: none;
+	}
+
+	.thesis-mobile{
+		display: grid;
+		grid-column: full--start / full--end;
+		width: 100%;
+		text-align: center;
+	}
+
+	.thesis-mobile h1{
+		padding-bottom: 16px;
+	}
+
+	.thesis-video video{
+		width: 100%;
+	}
+  }
+
+  /* :::: END OF THESIS :::: */
